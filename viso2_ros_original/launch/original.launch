@@ -1,0 +1,8 @@
+<launch>
+  <!-- Viso2 -->
+  <node pkg="viso2_ros_original" type="stereo_odometer_original" name="stereo_odometer_original" output="screen">
+    <remap from="stereo" to="/rs2_ros"/>
+    <remap from="image" to="image_rect_raw"/>
+  </node>
+
+</launch>
